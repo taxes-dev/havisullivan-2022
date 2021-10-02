@@ -4,10 +4,13 @@ title: havisullivan.com
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="utf-8">
+        <link rel="canonical" href="https://havisullivan.com{{ page.url }}">
         <title>{{ title }}</title>
     </head>
     <body>
         {{> nav }}
         {{{ content }}}
+        {{> footer }}
     </body>
 </html>

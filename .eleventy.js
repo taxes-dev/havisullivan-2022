@@ -1,5 +1,8 @@
 module.exports = function(eleventyConfig) {
-    // Return your Object options:
+
+    console.dir(eleventyConfig);
+    eleventyConfig.addGlobalData("copyrightyear", () => new Date().getFullYear());
+
     return {
       dir: {
         input: "src",
