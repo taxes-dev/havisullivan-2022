@@ -1,0 +1,10 @@
+module.exports = function(eleventyConfig) {
+    // Return your Object options:
+    return {
+      dir: {
+        input: "src",
+        output: "_site",
+        layouts: "_layouts"
+      }
+    }
+  };
