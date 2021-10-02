@@ -9,6 +9,7 @@
   },
   "author": "Havi S. <havi@taxes.dev>",
   "devDependencies": {
-    "@11ty/eleventy": "canary"
+    "@11ty/eleventy": "canary",
+    "@taxes/eleventy-plugin-dart-sass": "git+https://git.taxes.dev/taxes/eleventy-plugin-dart-sass.git"
   }
 }
