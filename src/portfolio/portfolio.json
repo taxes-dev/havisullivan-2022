@@ -1,0 +1,287 @@
+{
+    "web": [
+        {
+            "title": "Blizzard Rebrand Project",
+            "image": "blizzard-com.png",
+            "thumbnail": "blizzard-com.jpg",
+            "label": "2017",
+            "links": [
+                {
+                    "url": "/portfolio/blizzard-rebrand",
+                    "text": "Read more about the project."
+                }
+            ],
+            "inverted": true,
+            "description": "Starting in 2016, Blizzard decided to execute a \"rebrand\" where their online presence would be unified under the Blizzard brand instead of Battle.net. This was a major iniative for the company that required the involvement of every web and game team, as well as traditional publishing and marketing. For my team in particular, we launched 5 new products in the span of a single year to support the unification of the brand."
+        },
+        {
+            "title": "BlizzCon 2017 Watch Page",
+            "image": "blizzcon2017.png",
+            "thumbnail": "blizzcon2017.jpg",
+            "label": "2017",
+            "links": [
+                {
+                    "url": "https://web.archive.org/web/20171105053022/blizzcon.com/en-us/watch"
+                }
+            ],
+            "inverted": true,
+            "description": "BlizzCon 2017 marked the first year that BlizzCon would not be broadcast by DirecTV, and we had to learn how to build video from top to bottom. More than just the UI, my team in Web & Mobile was involved at every step, working closely with our newly formed Broadcast department to deliver 170 hours of video-on-demand and up to 12 simultaneous live streams to our players."
+        },
+        {
+            "title": "Battle.net Shop",
+            "image": "battlenet-shop.png",
+            "thumbnail": "battlenet-shop.jpg",
+            "label": "2013",
+            "links": [
+                {
+                    "url": "https://us.shop.battle.net/en-us"
+                }
+            ],
+            "inverted": true,
+            "description": "My first project at Blizzard Entertainment was the Battle.net Shop. Despite launching only two months after my start date, it was surprising how far it had to go in that time. It was a lot of work, but we were successful. I mostly contributed to front end engineering (HTML/CSS/JavaScript and Freemarker templates), but over time I became comfortable contributing to the back-end code as well despite a 10-year lapse in my Java skills."
+        },
+        {
+            "title": "GameStop Expo 2013",
+            "image": "expo.png",
+            "thumbnail": "expo.jpg",
+            "label": "2013",
+            "links": [
+                {
+                    "url": "https://web.archive.org/web/20130709110053/http://www.gamestop.com/expo"
+                }
+            ],
+            "inverted": true,
+            "description": "The web site for the GameStop Expo was my first real-world test of a responsive web site. The designer didn’t intend for it to be responsive, but I went ahead with it anyways and created a usable experience that looks good on all devices from phones to desktop computers. The site features three different break points to accommodate a range of display sizes. <a href=\"http://sass-lang.com/\">SASS</a> and <a href=\"http://dfcb.github.io/extra-strength-responsive-grids/\">Extra Strength Responsive Grids</a> helped me to crank out the code for this site in about 10 hours."
+        },
+        {
+            "title": "GameStop Header",
+            "image": "ebgheader.png",
+            "thumbnail": "ebgheader.jpg",
+            "label": "2012",
+            "links": [
+                {
+                    "url": "https://www.gamestop.com/"
+                }
+            ],
+            "description": "The new header for the EBGames and GameStop e-commerce sites represented an improvement on several fronts. Visually, it was less cluttered than the previous header and featured fewer items hidden behind drop-down menus. More importantly, on the technical side of the implementation it had less markup, less CSS, and less JavaScript, resulting in a measurable boost to client-side performance and reduction in bandwidth consumption (about 30%)."
+        },
+        {
+            "title": "Mobile Rent Payments",
+            "image": "mobilerp.png",
+            "thumbnail": "mobilerp.png",
+            "label": "2009",
+            "links": [
+                {
+                    "url": "http://web.archive.org/web/20100207090545/http://m.camdenliving.com/"
+                }
+            ],
+            "description": "One of the core applications I worked on at RealPage was the Online Rent Payments system, which allows apartment complex residents to pay their rent online with a check or credit card. Camden Living, an existing client using this system, approached us asking for an iOS-specific version of the application. We created a small portal in ASP.NET WebForms using the Microsoft Ajax Toolkit. It was my first foray into developing for mobile Safari, and I was quite pleased with the outcome."
+        },
+        {
+            "title": "PayDay One – Direct Flow",
+            "image": "paydayone.png",
+            "thumbnail": "paydayone.jpg",
+            "label": "2008",
+            "links": [
+                {
+                    "url": "http://web.archive.org/web/20081206190120/http://www.paydayone.com/"
+                }
+            ],
+            "description": "One of my first projects at Think Finance was to implement &ldquo;Direct Flow&rdquo; on the PayDay One brand. This was a simplification of the user experience from eight screens during the loan process down to two. It was also my first exposure to an MVC interface pattern for a web site. This was while ASP.NET MVC was still in beta, so we implemented our own MVC engine using custom code attached to WebForms. On my own initiative, I created some code in the site that auto-populated the forms with random customer data in order to speed up QA testing."
+        },
+        {
+            "title": "Optymize, Inc",
+            "image": "optymize.png",
+            "thumbnail": "optymize.jpg",
+            "label": "2001",
+            "links": [
+                {
+                    "url": "http://web.archive.org/web/20060203121807/http://optymize.com/"
+                }
+            ],
+            "description": "This is web site of a marketing firm I worked for earlier in my career. I designed the site and built the HTML. There’s nothing really fancy going on here, but it’s a good example of my design skills circa 2001."
+        },
+        {
+            "title": "Beckett Marketplace",
+            "image": "beckettmarketplace.png",
+            "thumbnail": "beckettmarketplace.png",
+            "label": "2000",
+            "links": [
+                {
+                    "url": "http://web.archive.org/web/20000302171517/http://www.beckett.com/items/quicklist.asp?Kind=2"
+                }
+            ],
+            "description": "My earliest example of e-commerce work. I designed and developed the user experience for the search features and the checkout process on the first version of the Beckett Marketplace. If you’re wondering why it looks eerily similar to Amazon.com of the time, it’s because that’s the direction I was given."
+        }
+    ],
+    "app": [
+        {
+            "title": "Shop in Blizzard Battle.net App",
+            "image": "shop-app.png",
+            "thumbnail": "shop-app.jpg",
+            "label": "2014",
+            "links": [
+                {
+                    "url": "https://www.blizzard.com/en-us/apps/battle.net/desktop",
+                    "text": "Download the App"
+                }
+            ],
+            "inverted": true,
+            "description": "After successfully launching Battle.net Shop on the web, the next stop was to create a newvtab in the Battle.net App. This required working closely with the native programmers on the Appvteam to integrate the web pages seamlessly into the application window. The App also had its ownvrequirements for supported dimensions, so I had to expand the range of responsive states beyondvwhat was used on the web site. Fortunately we had established a common UI language between the App and the web site previously, so integrating the overall look and feel was less of an issue."
+        },
+        {
+            "title": "CatalogShark",
+            "image": "catalogshark.png",
+            "thumbnail": "catalogshark.jpg",
+            "label": "2011",
+            "inverted": true,
+            "description": "When the merchandisers at GameStop needed a batch ETL (extract, transform, load) tool for the e-commerce product catalog, I took the opportunity to spend a little extra time making sure the tool was both functional and pleasant to use. The application is written using a WPF XAML interface, and I used WPF’s extensibility to create glass elements using GameStop brand colors. I left some of the more complex controls such as the grids at the Windows defaults since I didn’t have a lot of time to complete the tool, but they appear clean and functional despite not meshing completely with the rest of the design."
+        },
+        {
+            "title": "CrossFire Valet (home)",
+            "image": "valet-1.png",
+            "thumbnail": "valet-1.jpg",
+            "label": "2007",
+            "description": "Valet was one of the first desktop applications I ever created. It was like an IM application except the user received new leads from automated email and phone systems rather than direct messages. It was written in C# and .NET, but I had to learn a lot of the Win32 API so that I could do more advanced features not supported by Windows Forms at the time, like seamless windows, tray notifications, and monitoring system-wide input for idle detection. I also learned about &ldquot;double-buffering&rdquot; for the first time since I had to solve a flicker issue whenever the list updated itself. :) I  wrote the server that supported it as well, integrating with a 3rd party push notification server appliance."
+        },
+        {
+            "title": "CrossFire Valet (lead)",
+            "image": "valet-2.png",
+            "thumbnail": "valet-2.jpg",
+            "label": "2007",
+            "description": "This is another view of the Valet application. This sub-window shows what happens whenever the user clicks on a lead in the main window. This actually utilizes an embedded web pane to display most of the UI. The reason we did this was to make it easier to update the application without having to push a new client version every time."
+        }
+    ],
+    "platform": [
+        {
+            "title": "Battle.net Platform Experience",
+            "label": "2019",
+            "thumbnail": "battlenet.png",
+            "description": "The Battle.net platform itself covers many different features: account management, social graph, digital distribution, e-commerce, and more. Blizzard's partners, both internal and external, have to integrate many different pieces of software to utilize them all. I was charged with forming a brand new organization within Battle.net to handle improvements to the developer experience, covering SDKs, documentation, edge services, and more. The teams handling these products focus on making sure that Battle.net's offerings are world class and easy to use."
+        },
+        {
+            "title": "BlizzCon Virtual Ticket",
+            "label": "2017",
+            "thumbnail": "blizzconvt.png",
+            "description": "While the Virtual Ticket itself is a singular product, that didn’t stop me from being forward-thinking. 2017 was the first year Blizzard produced video content for BlizzCon without the assistance of a DirecTV partnership. We had to build out our video delivery capabilities in-house in partnership with our growing Broadcast department, and we built the systems backing the Virtual Ticket product using a series of first party services and third party vendor platforms, all designed to be extensible to other video products in the future."
+        },
+        {
+            "title": "Battle.net SDK",
+            "label": "2015",
+            "thumbnail": "battlenet.png",
+            "description": "Battle.net had long provided a binary library to our internal game development teams for interfacing with platform services such as authorization, chat channels, and microtransactions. I was responsible for forming a new team to create a proper SDK, which included source code, documentation, and reference implementations. We also tackled a large project to port the SDK from C++ to C# for Unity-based projects like Hearthstone to improve cross-platform support on mobile devices."
+        },
+        {
+            "title": "BattlePay Product Management Tool",
+            "label": "2014",
+            "thumbnail": "battlenet.png",
+            "description": "BattlePay is an API used across Blizzard to support online transactions both through the web storefronts and in-game purchases. My team was responsible for building the tools for creating and managing products and entitlements, including multi-currency support. Eventually we also modernized the system for generating retail CD keys and sending them off to manufacturing, which up until that point was a very manual process."
+        },
+        {
+            "title": "GameStop Checkout",
+            "label": "2012",
+            "thumbnail": "gamestop.png",
+            "description": "Originally, gamestop.com’s checkout experience was built directly on top of Microsoft Commerce Server, a set of COM objects that bolted the UI almost directly to the database, making it inflexible and difficult to scale. To bring the technology into the 21st century, I first banished Commerce Server to live behind a set of services, and then my team and I re-architected the whole system using higher level services to support the shopping cart and invoices. We also rebuilt the UI in ASP.NET MVC, removing all of the hardcoded business logic in favor of service orchestration."
+        },
+        {
+            "title": "GameStop Catalog",
+            "label": "2011",
+            "thumbnail": "gamestop.png",
+            "description": "At GameStop, I worked side by side with a system architect to completely rebuild the catalog experience on gamestop.com. This included setting up and building the pipeline for ingesting data into an Oracle Endeca search appliance, crafting the user experience for search on the front-end, and updating the tools used by merchandisers to enter product and marketing data."
+        },
+        {
+            "title": "RealPage Payments",
+            "label": "2009",
+            "thumbnail": "realpage.png",
+            "description": "I was one of two lead engineers on RealPage’s payments platform team, building system that processed rent and other payments for thousands of apartment complexes across the United States. This included ACH and credit card payment processing from both online self-service payments entered through our resident portal as well as payments originated on-site using check and credit card scanning hardware."
+        },
+        {
+            "title": "Think Finance Lead Generation",
+            "label": "2008",
+            "thumbnail": "thinkfinance.png",
+            "description": "At Think Finance, I was the lead engineer for a time on a system of services that we built to support lead generation from affiliates. It allowed non-technical marketing partners to create landing pages that could collect customer data and funnel them into our loan qualification rules engine so that we could determine if it was a good lead or not, and if so it would send them over to a white label loan experience and credit the affiliate."
+        },
+        {
+            "title": "Beckett Marketplace",
+            "label": "2000",
+            "thumbnail": "beckettmedia.png",
+            "description": "Beckett Publication’s Marketplace was the first project I worked on that I consider a &ldquo;platform.&rdquo; It featured a system where individual sports collectible vendors could list items for sale (similar to eBay) but customers saw it as a single storefront (similar to Amazon). One of the more challenging aspects I had to code was the unified cart, such as reconciling the differences in vendor preferences to come up with a single list of shipping charges to present to the customer when their order mixed items from different vendors."
+        }
+    ],
+    "titles": [
+        {
+            "title": "Hearthstone®: Saviors of Uldum",
+            "publisher": "Blizzard Entertainment",
+            "year": "2019",
+            "image": "hearthstone.jpg",
+            "description": "As <strong>Havi Sullivan, Battle.net Team Leadership</strong>. Delivered new push notification SDK for use by the Hearthstone client team, managing business requirements from our global publishing team and technical requirements from the game development team."
+        },
+        {
+            "title": "Middle-earth™: Shadow of War™",
+            "publisher": "Warner Bros. Interactive Entertainment",
+            "year": "2017",
+            "image": "sow.jpg",
+            "description": "As <strong>Havi Sullivan, Additional Production</strong>. Developed roadmap for online, social, and monetization features, as well as initial UI designs and use cases for in-game microtransactions. Managed vendor relationship with backend platform provider."
+        },
+        {
+            "title": "Heroes of the Storm™",
+            "publisher": "Blizzard Entertainment",
+            "year": "2015",
+            "image": "heroes.jpg",
+            "description": "As <strong>Havi Sullivan, Battle.net</strong>. Managed team working on tools supporting in-game sales of virtual goods and scheduling of promotions/sales."
+        },
+        {
+            "title": "Blackrock Mountain: A Hearthstone® Adventure",
+            "publisher": "Blizzard Entertainment",
+            "year": "2015",
+            "image": "hearthstone.jpg",
+            "description": "As <strong>Havi Sullivan, Battle.net</strong>. Managed team working on tools supporting in-game sales of adventure paths and card packs. Also worked closely with game team to re-implement game service interfaces with Battle.net to better support Unity3D."
+        },
+        {
+            "title": "World of Warcraft®: Warlords of Draenor™",
+            "publisher": "Blizzard Entertainment",
+            "year": "2014",
+            "image": "wow_wod.jpg",
+            "description": " As <strong>Havi Sullivan, Battle.net Engineer</strong>. Developed code supporting pre-sales of the <em>Warlords of Draenor</em> expansion on Battle.net Shop. I also have <a href=\"http://bit.ly/havi-npc\" rel=\"nofollow\" target=\"_blank\">an NPC named after me</a>!"
+        },
+        {
+            "title": "Diablo III®: Reaper of Souls™",
+            "publisher": "Blizzard Entertainment",
+            "year": "2014",
+            "image": "d3ros.jpg",
+            "description": "As <strong>Havi Sullivan, Battle.net Engineer</strong>. Developed code supporting pre-sales and post-launch sales of the <em>Reaper of Souls</em> expansion on Battle.net Shop. This was the first digital pre-sale on the new Battle.net Shop platform."
+        }
+    ],
+    "rebrand": [
+        {
+            "image": "blizzard-careers.png",
+            "thumbnail": "blizzard-careers.jpg",
+            "description": "Players can browse job openings on Blizzard Careers."
+        },
+        {
+            "image": "global-header.png",
+            "thumbnail": "global-header.jpg",
+            "description": "The new global header provides a unified view into every Blizzard web property."
+        },
+        {
+            "image": "global-footer.png",
+            "thumbnail": "global-footer.jpg",
+            "description": "The new global footer serves Blizzard’s business needs transparently so individual sites can focus on content."
+        },
+        {
+            "image": "blizzard-news.png",
+            "thumbnail": "blizzard-news.jpg",
+            "description": "Blizzard News aggreates news posts from all of Blizzard’s community channels for consumption in a single place."
+        },
+        {
+            "image": "blizzard-com.png",
+            "thumbnail": "blizzard-com.jpg",
+            "description": "The new Blizzard.com home page represents the first major update to the site since 2009."
+        },
+        {
+            "image": "blizzard-esports.png",
+            "thumbnail": "blizzard-esports.jpg",
+            "description": "Blizzard Esports is a brand new portal for all of Blizzard’s esports programs."
+        }
+    ]
+}

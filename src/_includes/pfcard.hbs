@@ -1,0 +1,19 @@
+<div class="card pfcard {{#if inverted}}has-background-dark{{/if}}" {{#if image}}data-image="/images/portfolio/large/{{image}}"{{/if}}
+    style="background-image: url(/images/portfolio/thumbnails/{{thumbnail}});">
+    <div class="card-content">
+        <div class="content {{#if inverted}}has-text-light{{/if}}">
+            <p class="is-size-5 has-text-weight-medium">{{title}}</p>
+            <p><span class="tag">{{label}}</span> {{> @partial-block }}</p>
+                    {{#if links}}
+        <ul>
+            {{#each links}}
+            <li>
+                {{portfolioLink url text}}
+            </li>
+            {{/each}}
+        </ul>
+        {{/if}}
+
+        </div>
+    </div>
+</div>

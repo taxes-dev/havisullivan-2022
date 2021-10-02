@@ -1,5 +1,42 @@
 @import "vars";
 @import "../../node_modules/bulma/bulma.sass";
 
-body {
+.pfcard {
+    background-repeat: no-repeat;
+    &[data-image] {
+        cursor: pointer;
+    }
+    .card-content
+    {
+        padding-left: 200px;
+        ul {
+            list-style-type: none;
+            margin-left: 0;
+        }
+    }
+}
+
+.is-half .pfcard {
+    background-position: bottom 24px right 24px;
+    .card-content
+    {
+        padding-left: 24px;
+        padding-bottom: 80px;
+    }
+}
+
+.pfpane {
+    display: none;
+    padding-top: 24px;
+    &.is-active {
+        display: block;
+    }
+}
+
+#pflightbox .modal-content {
+    width: 80%;
+}
+
+.pfrebrand img[data-image] {
+    cursor: pointer;
 }

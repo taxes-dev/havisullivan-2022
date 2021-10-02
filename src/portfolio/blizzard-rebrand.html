@@ -1,0 +1,144 @@
+---
+title: Blizzard Rebrand Project | Portfolio | havisullivan.com
+layout: default.hbs
+---
+<section class="pfrebrand section">
+    <h1 class="title">Blizzard Rebrand Project</h1>
+    <div class="content">
+        <p>Starting in late 2016, Blizzard Entertainment began execution on a project to unify the brand online under
+            Blizzard rather
+            than Battle.net. Alongside this rebrand effort, my team was tasked with setting the direction for the
+            Blizzard brand
+            on the web and on mobile. Twelve months later, my small team of four software engineers and two graphic
+            designers launched
+            the final of five new products.</p>
+        <p>My main contributions for all of these projects was to set the product vision for each one, work closely with
+            the designers
+            on user experience, and set a roadmap where we could deliver all of them by the end of 2017.</p>
+    </div>
+
+
+    <div class="columns">
+        {{#each rebrand}}
+        <div class="column is-half">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image">
+                        <img src="/images/portfolio/thumbnails/blizzard-rebrand/{{ thumbnail }}"
+                            data-image="/images/portfolio/large/blizzard-rebrand/{{ image }}">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="content">
+                        {{ description }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{#if (every2 @index)}}
+    </div>
+    <div class="columns">
+        {{/if}}
+        {{/each}}
+    </div>
+    </div>
+</section>
+
+<section class="section">
+    <h2 class="is-size-4">Blizzard Careers</h2>
+    <div class="content">
+        <p>The first web site to be revamped was
+            <a href="https://web.archive.org/web/20170315024938/https://careers.blizzard.com/en-us/"
+                target="_blank">Blizzard Careers (archive link)</a>, launching in December 2016. Previously, this was a
+            subsection of the main blizzard.com web site.
+            The new site is standalone and features links to articles about working at Blizzard, in-depth descriptions
+            of our offices
+            and disciplines, and a section dedicated to new graduates and interns. Blizzard Careers was also the first
+            site to use
+            our updated styleguide for all Blizzard-branded properties.
+        </p>
+    </div>
+</section>
+
+<section class="section">
+    <h2 class="is-size-4">Global Navigation</h2>
+    <div class="content">
+        <p>The new global navigation component was the most challenging of all the projects. Essentially every web site
+            team across
+            Blizzard acted as a stakeholder and customer on this project. This created a lot of conflicts between
+            different teams
+            whose requirements came into odds with each other, and I had to negotiate how the final product would work.
+            Also, we
+            had to support two different tech stacks: Node.js and Java/Spring.</p>
+        <p>The major opportunity here, though, was to formally productize this component. Previously it had been treated
+            as a shared
+            asset, meaning engineers from all over the company would commit changes to it without any sort of change
+            management,
+            continually destabilizing the codebase. Now it is controlled by one team who fields both new feature
+            requests as well
+            as ongoing product support. We even have a formal SLA for supporting past versions.</p>
+        <p>We launched this product in March 2017, and I still get compliments a year later from around the company for
+            how I handled
+            this project and how easy it is to integrate with the new navigation component.</p>
+    </div>
+</section>
+
+<section class="section">
+    <h2 class="is-size-4">Blizzard News</h2>
+    <div class="content">
+        <p>Before
+            <a href="https://news.blizzard.com" target="_blank">Blizzard News</a> launched in June 2017, the only place
+            to read all of the news across Blizzard was in the desktop launcher.
+            Now there is an optimized experience for both desktop and mobile web.
+        </p>
+        <p>Blizzard News was also my team's first experience with deploying a web experience
+            <a href="https://news.blz.cn/zh-cn" target="_blank">in Chinese infrastructure</a>. This had a lot of
+            technical and legal hurdles we had to learn and overcome together.
+        </p>
+    </div>
+</section>
+
+<section class="section">
+    <h2 class="is-size-4">Blizzard.com</h2>
+    <div class="content">
+        <p>The centerpiece of the rebrand project was the relaunch of
+            <a href="https://www.blizzard.com" target="_blank">Blizzard.com</a>. Debuting in October of 2017, it was
+            ready just in time for BlizzCon and represented the first major
+            update to that site since it was last updated in 2009. This new version is more player-focused, showing
+            Blizzard’s games
+            and news, instead of just showing a list of press releases.
+        </p>
+        <p>Building on our experience Blizzard News, we also launched
+            <a href="https://blz.cn/zh-cn/" target="_blank">this site in China</a>, representing Blizzard's first
+            corporate web site presence in that country.
+        </p>
+    </div>
+</section>
+
+<section class="section">
+    <h2 class="is-size-4">Blizzard Esports</h2>
+    <div class="content">
+        <p>Wrapping up in December 2017, we launched the final product needed to build out our new Blizzard brand
+            platform,
+            <a href="https://web.archive.org/web/20180221003239/https://esports.blizzard.com/en-us/"
+                target="_blank">Blizzard Esports (archive link)
+            </a>. This site was created specifically to solve a discoverability problem with Blizzard’s myriad of
+            esports programs
+            across all of our franchises. Later on, we plan to expand the site with much more content and useful
+            information for
+            Blizzard esports fans.
+        </p>
+        <p>
+            <a href="/portfolio">
+                <span class="icon-text">
+                    <span class="icon">
+                        <i class="fas fa-arrow-alt-circle-left"></i>
+                    </span>
+                    <span>Return to Portfolio</span>
+                </span>
+            </a>
+        </p>
+    </div>
+</section>
+
+{{> pflightbox}}

@@ -1,0 +1,114 @@
+---
+title: Portfolio | havisullivan.com
+layout: default.hbs
+---
+<section class="section pb-0">
+    <h1 class="title">Portfolio</h1>
+    <div class="content">
+        <p>Presented below are some quick summaries of recent (and some not-so-recent) projects that I’ve worked on.</p>
+
+        <ul>
+            <li>
+                <strong>Platforms</strong> are some of my favorite platforms that I've created or worked on.
+            </li>
+            <li><strong>Web Sites</strong> are a selection of production web projects that I’ve released over the years.
+            </li>
+            <li><strong>Applications</strong> are a few desktop applications that I’ve developed, mostly internal tools.
+            </li>
+            <li><strong>Shipped Titles</strong> are the video game titles I’ve worked on.</li>
+        </ul>
+    </div>
+
+    <div class="tabs is-centered is-large">
+        <ul>
+            <li class="pftab is-active" data-target="platforms"><a>Platforms</a></li>
+            <li class="pftab" data-target="web"><a>Web Sites</a></li>
+            <li class="pftab" data-target="apps"><a>Applications</a></li>
+            <li class="pftab" data-target="titles"><a>Shipped Titles</a></li>
+        </ul>
+    </div>
+</section>
+
+<section id="platforms" class="pfpane is-active section">
+    <div class="columns">
+        {{#each platform}}
+        <div class="column is-half">
+            {{#> pfcard}}
+            {{{ description }}}
+            {{/pfcard}}
+        </div>
+        {{#if (every2 @index)}}
+    </div>
+    <div class="columns">
+        {{/if}}
+        {{/each}}
+    </div>
+</section>
+
+<section id="web" class="pfpane section">
+    {{#each web}}
+    <div class="columns">
+        <div class="column">
+            {{#> pfcard}}
+            {{{ description }}}
+            {{/pfcard}}
+        </div>
+    </div>
+    {{/each}}
+</section>
+
+<section id="apps" class="pfpane section">
+    {{#each app}}
+    <div class="columns">
+        <div class="column">
+            {{#> pfcard}}
+            {{{ description }}}
+            {{/pfcard}}
+        </div>
+    </div>
+    {{/each}}
+</section>
+
+<section id="titles" class="pfpane section">
+    {{#each titles}}
+    <div class="columns">
+        <div class="column">
+            <div class="card">
+                <div class="card-content">
+                    {{#if image}}
+                    <div class="media">
+                        <div class="media-left">
+                            <figure class="image">
+                                <img src="/images/boxshots/{{image}}" alt="{{title}} box shot">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <p class="is-size-5 has-text-weight-medium">{{title}} • {{publisher}} • {{year}}</p>
+                            <p>{{{ description }}}</p>
+                        </div>
+                    </div>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</section>
+
+{{> pflightbox}}
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', () => {
+        const $tabs = Array.prototype.slice.call(document.querySelectorAll('.pftab'), 0);
+        const $panes = Array.prototype.slice.call(document.querySelectorAll('.pfpane'), 0);
+        $tabs.forEach(el => {
+            el.addEventListener('click', () => {
+                $tabs.forEach(el => el.classList.remove('is-active'));
+                $panes.forEach(el => el.classList.remove('is-active'));
+                const target = el.dataset.target;
+                const $target = document.getElementById(target);
+                el.classList.add('is-active');
+                $target.classList.add('is-active');
+            });
+        });
+    });
+</script>

@@ -1,0 +1,42 @@
+<div id="pflightbox" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <figure class="image is-fullwidth">
+            <img id="pflightboximg">
+        </figure>
+    </div>
+    <button id="pflightboxclose" class="modal-close is-large" aria-label="close"></button>
+</div>
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', () => {
+        const $images = Array.prototype.slice.call(document.querySelectorAll('[data-image]'), 0);
+        $images.forEach(el => {
+            const $links = Array.prototype.slice.call(el.querySelectorAll('a'), 0);
+            $links.forEach(anchor => {
+                anchor.addEventListener('click', (evt) => {
+                    evt.stopPropagation();
+                });
+            });
+            el.addEventListener('click', () => {
+                const $modal = document.getElementById('pflightbox');
+                const $img = document.getElementById('pflightboximg');
+                if ($modal && $img) {
+                    $img.setAttribute('src', el.dataset.image);
+                    $modal.classList.add('is-active');
+                }
+            });
+        });
+
+        const $close = document.getElementById('pflightboxclose');
+        if ($close) {
+            $close.addEventListener('click', () => {
+                const $modal = document.getElementById('pflightbox');
+                const $img = document.getElementById('pflightboximg');
+                if ($modal && $img) {
+                    $modal.classList.remove('is-active');
+                    $img.removeAttribute('src');
+                }
+            });
+        }
+    });
+</script>
