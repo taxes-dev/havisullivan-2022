@@ -1,5 +1,18 @@
 @import "vars";
+@import "fonts";
 @import "../../node_modules/bulma/bulma.sass";
+@import "nav";
+
+.title {
+    background-color: #337a21;
+    padding: 12px;
+    color: #fff;
+}
+
+.sidebar {
+    font-weight: bold;
+    text-align: right;
+}
 
 .pfcard {
     background-repeat: no-repeat;
