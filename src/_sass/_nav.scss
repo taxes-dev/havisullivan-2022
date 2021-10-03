@@ -1,22 +1,58 @@
+.navbar {
+    background-image: url(../images/navbar.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-color: #015b80;
+}
+
 .navbar-brand .navbar-item {
     font-family: $family-header;
     font-size: 2.6rem;
     text-transform: uppercase;
+    color: $scheme-main;
     padding-left: 3rem;
+    text-shadow: 2px 2px 4px $text;
+
     &,
-    &:hover {
-        color: #000;
+    &:hover,
+    &:active,
+    &:visited {
+        color: $scheme-main;
     }
+}
+.navbar-burger,
+.navbar-burger:hover,
+.navbar-burger:active,
+.navbar-burger:visited {
+    color: $scheme-main;
 }
 
 @include from($desktop) {
+    .navbar {
+        height: 170px;
+        overflow: hidden;
+        background-position: center;
+    }
     #navbarBasic {
         display: block;
-        position: fixed;
+        position: absolute;
         top: 0;
         right: 120px;
+        &::after {
+            display: block;
+            background-color: rgb(255, 239, 55);
+            position: relative;
+            width: 140px;
+            height: 550px;
+            content: " ";
+            transform: rotate(-22deg);
+            right: -86px;
+            top: -250px;
+            z-index: -1;
+        }
 
         .navbar-start {
+            height: 170px;
             flex-direction: column;
             @for $i from 1 through 5 {
                 & > a:nth-child(n + #{$i}) {
@@ -24,21 +60,10 @@
                     left: 20px * $i;
                 }
             }
-            & > a, & > a:hover {
+            & > a,
+            & > a:hover {
                 font-weight: bold;
                 background: transparent;
-            }
-
-            &::before {
-                display: block;
-                background-color: rgba(255, 239, 55, 0.6);
-                position: absolute;
-                width: 120px;
-                height: 550px;
-                content: " ";
-                transform: rotate(-30deg);
-                right: -110px;
-                top: -105px;
             }
         }
     }

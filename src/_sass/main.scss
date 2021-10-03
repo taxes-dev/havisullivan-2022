@@ -6,12 +6,28 @@
 .title {
     background-color: #337a21;
     padding: 12px;
-    color: #fff;
+    color: $scheme-main;
+    position: relative;
+
+    @include from($desktop) {
+        &::after {
+            display: block;
+            position: absolute;
+            content: "\\\\\\";
+            color: $scheme-main;
+            right: 12px;
+            top: -12px;
+            font-weight: bold;
+            font-size: 6rem;
+        }
+    }
 }
 
 .sidebar {
     font-weight: bold;
-    text-align: right;
+    @include from($tablet) {
+        text-align: right;
+    }
 }
 
 .pfcard {
@@ -19,20 +35,29 @@
     &[data-image] {
         cursor: pointer;
     }
-    .card-content
-    {
+    .card-content {
         padding-left: 200px;
         ul {
             list-style-type: none;
             margin-left: 0;
         }
     }
+
+    &.inverted {
+        .card-content {
+            a, a:visited {
+                color: $yellow;
+            }
+            a:hover {
+                color: $scheme-main;
+            }
+        }
+    }
 }
 
 .is-half .pfcard {
     background-position: bottom 24px right 24px;
-    .card-content
-    {
+    .card-content {
         padding-left: 24px;
         padding-bottom: 80px;
     }
@@ -52,4 +77,16 @@
 
 .pfrebrand img[data-image] {
     cursor: pointer;
+}
+
+.footer {
+    background-color: $scheme-main;
+    border-top: 1px solid $dark;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.footer .icon-text {
+    font-family: $family-header;
+    margin-left: 1.5em;
 }

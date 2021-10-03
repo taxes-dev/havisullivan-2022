@@ -8,10 +8,10 @@ layout: default.hbs
         <p>Presented below are some quick summaries of recent (and some not-so-recent) projects that I’ve worked on.</p>
 
         <ul>
+            <li><strong>Web Sites</strong> are a selection of production web projects that I’ve released over the years.
+            </li>
             <li>
                 <strong>Platforms</strong> are some of my favorite platforms that I've created or worked on.
-            </li>
-            <li><strong>Web Sites</strong> are a selection of production web projects that I’ve released over the years.
             </li>
             <li><strong>Applications</strong> are a few desktop applications that I’ve developed, mostly internal tools.
             </li>
@@ -21,15 +21,27 @@ layout: default.hbs
 
     <div class="tabs is-centered is-large">
         <ul>
-            <li class="pftab is-active" data-target="platforms"><a>Platforms</a></li>
-            <li class="pftab" data-target="web"><a>Web Sites</a></li>
+            <li class="pftab is-active" data-target="web"><a>Web Sites</a></li>
+            <li class="pftab" data-target="platforms"><a>Platforms</a></li>
             <li class="pftab" data-target="apps"><a>Applications</a></li>
             <li class="pftab" data-target="titles"><a>Shipped Titles</a></li>
         </ul>
     </div>
 </section>
 
-<section id="platforms" class="pfpane is-active section">
+<section id="web" class="pfpane section is-active">
+    {{#each web}}
+    <div class="columns">
+        <div class="column">
+            {{#> pfcard}}
+            {{{ description }}}
+            {{/pfcard}}
+        </div>
+    </div>
+    {{/each}}
+</section>
+
+<section id="platforms" class="pfpane section">
     <div class="columns">
         {{#each platform}}
         <div class="column is-half">
@@ -43,18 +55,6 @@ layout: default.hbs
         {{/if}}
         {{/each}}
     </div>
-</section>
-
-<section id="web" class="pfpane section">
-    {{#each web}}
-    <div class="columns">
-        <div class="column">
-            {{#> pfcard}}
-            {{{ description }}}
-            {{/pfcard}}
-        </div>
-    </div>
-    {{/each}}
 </section>
 
 <section id="apps" class="pfpane section">
@@ -83,7 +83,7 @@ layout: default.hbs
                             </figure>
                         </div>
                         <div class="media-content">
-                            <p class="is-size-5 has-text-weight-medium">{{title}} • {{publisher}} • {{year}}</p>
+                            <h4 class="is-size-5 has-text-weight-medium">{{title}} • {{publisher}} • {{year}}</h4>
                             <p>{{{ description }}}</p>
                         </div>
                     </div>
