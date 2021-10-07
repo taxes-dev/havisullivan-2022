@@ -1,10 +1,12 @@
 <footer class="footer">
-    <div class="columns is-mobile">
+    <div class="columns">
         <div class="column content">
-            <p>Copyright © {{ copyrightyear }} Havi Sullivan. <a href="/colophon">About the site.</a></p>
+            <p class="has-text-centered">Copyright © {{ copyrightyear }} Havi Sullivan. <a href="/colophon">About the site.</a></p>
         </div>
+    </div>
+    <div class="columns">
         <div class="column content">
-            <p class="has-text-right">
+            <p class="has-text-centered">
                 <a href="https://twitter.com/Taxes_dev">
                     <span class="icon-text">
                         <span class="icon">
@@ -29,6 +31,13 @@
                     </span>
                 </a>
             </p>
+        </div>
+    </div>
+    <div class="columns">
+        <div class="column content">
+            <div class="pony">
+                {{> pony}}
+            </div>
         </div>
     </div>
 </footer>

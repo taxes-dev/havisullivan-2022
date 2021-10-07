@@ -3,6 +3,10 @@
 @import "../../node_modules/bulma/bulma.sass";
 @import "nav";
 
+a:hover {
+    text-decoration: underline;
+}
+
 .title {
     background-color: #337a21;
     padding: 12px;
@@ -63,6 +67,12 @@
     }
 }
 
+.pftab a {
+    &, &:hover {
+        text-decoration: none;
+    }
+}
+
 .pfpane {
     display: none;
     padding-top: 24px;
@@ -84,9 +94,18 @@
     border-top: 1px solid $dark;
     margin-left: 3rem;
     margin-right: 3rem;
+
+    .pony {
+        display: block;
+        height: 64px;
+        width: 64px;
+        margin: 0 auto;
+        opacity: 0.3;
+    }
 }
 
 .footer .icon-text {
     font-family: $family-header;
-    margin-left: 1.5em;
+    margin: 0 0.5em;
 }
+

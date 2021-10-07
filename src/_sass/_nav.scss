@@ -17,6 +17,7 @@
     &:hover,
     &:active,
     &:visited {
+        text-decoration: none;
         color: $scheme-main;
     }
 }
