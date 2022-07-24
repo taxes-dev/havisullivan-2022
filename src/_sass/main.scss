@@ -42,7 +42,9 @@ a:hover {
         cursor: pointer;
     }
     .card-content {
-        padding-left: 200px;
+        @include from($desktop) {
+            padding-left: 200px;
+        }
         ul {
             list-style-type: none;
             margin-left: 0;
@@ -81,6 +83,11 @@ a:hover {
     padding-top: 24px;
     &.is-active {
         display: block;
+    }
+    @include until($desktop) {
+        .media {
+            flex-direction: column;
+        }
     }
 }
 
