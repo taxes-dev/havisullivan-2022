@@ -10,7 +10,7 @@
   "author": "Havi S. <havi@taxes.dev>",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.1",
-    "@taxes/eleventy-plugin-dart-sass": "git+https://git.taxes.dev/taxes/eleventy-plugin-dart-sass.git",
+    "@taxes/eleventy-plugin-dart-sass": "git+https://github.com/taxes-dev/eleventy-plugin-dart-sass.git",
     "bulma": "^0.9.4"
   }
 }
