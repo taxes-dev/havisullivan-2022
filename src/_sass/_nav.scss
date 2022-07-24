@@ -1,18 +1,61 @@
 .navbar {
-    background-image: url(../images/navbar.jpg);
+    /*background-image: url(../images/navbar.jpg);
     background-repeat: no-repeat;
     background-position: center top;
-    background-color: #015b80;
+    background-color: #015b80;*/
+    background-color: #7B3F00;
+    min-height: auto;
+    line-height: 1;
+    .navbar-deco {
+        font-size: 2.8rem;
+        display: flex;
+        &.reversed {
+            flex-direction: row-reverse;
+        }
+        span:nth-child(1) {
+            color: #B67233;
+        }
+        span:nth-child(2) {
+            color: #ed1d24;
+        }
+        span:nth-child(3) {
+            color: #D2B04C;
+        }
+    }
+}
+
+@include until ($desktop) {
+    .navbar .navbar-deco {
+        display: none;
+    }
+}
+
+.navbar-brand {
+    min-height: auto;
+}
+
+#navbarBasic {
+    background-color: #fff;
+}
+
+.navbar-item {
+    min-height: auto;
+    line-height: 1;
+
+    &,
+    &:hover,
+    &:active,
+    &:visited {
+        text-decoration: none;
+    }
 }
 
 .navbar-brand .navbar-item {
     font-family: $family-header;
-    font-size: 2.6rem;
+    font-size: 2.2rem;
     text-transform: uppercase;
     color: $scheme-main;
-    padding-left: 3rem;
-    text-shadow: 2px 2px 4px $text;
-
+    
     &,
     &:hover,
     &:active,
@@ -21,6 +64,7 @@
         color: $scheme-main;
     }
 }
+
 .navbar-burger,
 .navbar-burger:hover,
 .navbar-burger:active,
@@ -29,43 +73,14 @@
 }
 
 @include from($desktop) {
-    .navbar {
-        height: 170px;
-        overflow: hidden;
-        background-position: center;
-    }
     #navbarBasic {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 120px;
-        &::after {
-            display: block;
-            background-color: rgb(255, 239, 55);
-            position: relative;
-            width: 140px;
-            height: 550px;
-            content: " ";
-            transform: rotate(-22deg);
-            right: -86px;
-            top: -250px;
-            z-index: -1;
-        }
-
-        .navbar-start {
-            height: 170px;
-            flex-direction: column;
-            @for $i from 1 through 5 {
-                & > a:nth-child(n + #{$i}) {
-                    position: relative;
-                    left: 20px * $i;
-                }
-            }
-            & > a,
-            & > a:hover {
-                font-weight: bold;
-                background: transparent;
-            }
-        }
+        background-color: transparent;
+    }
+    .navbar-item {
+        color: $scheme-main;
+    }
+    .navbar-menu, .navbar-start {
+        justify-content: flex-end;
+        margin-right: 0;
     }
 }

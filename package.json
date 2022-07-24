@@ -1,6 +1,6 @@
 {
-  "name": "havisullivan-2021",
-  "version": "0.0.1",
+  "name": "havisullivan-2022",
+  "version": "0.0.2",
   "description": "havisullivan.com web site",
   "main": "index.js",
   "scripts": {
@@ -9,8 +9,8 @@
   },
   "author": "Havi S. <havi@taxes.dev>",
   "devDependencies": {
-    "@11ty/eleventy": "canary",
+    "@11ty/eleventy": "^1.0.1",
     "@taxes/eleventy-plugin-dart-sass": "git+https://git.taxes.dev/taxes/eleventy-plugin-dart-sass.git",
-    "bulma": "^0.9.3"
+    "bulma": "^0.9.4"
   }
 }
