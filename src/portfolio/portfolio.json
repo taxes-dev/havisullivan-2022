@@ -1,6 +1,31 @@
 {
     "web": [
         {
+            "title": "Soulframe.com",
+            "image": "soulframe.png",
+            "thumbnail": "soulframe.jpg",
+            "label": "2022",
+            "links": [
+                {
+                    "url": "https://www.soulframe.com/"
+                }
+            ],
+            "description": "At TennoCon 2022, Digital Extremes announced their latest game IP, <em>Soulframe</em>. This site featured an intriguing puzzle for players to solve and allowed them to reserve their display names for when the game launches."
+        },
+        {
+            "title": "Warframe.com Redesign",
+            "image": "warframe.png",
+            "thumbnail": "warframe.jpg",
+            "label": "2022",
+            "links": [
+                {
+                    "url": "https://www.warframe.com/"
+                }
+            ],
+            "inverted": true,
+            "description": "After six years with minimal visual updates, we launched a new home page and global navigation to the site. This culminated months of work on an entirely new design system focused on clean visuals and an accessible user experience, forming the foundatin of all new development on warframe.com."
+        },
+        {
             "title": "Blizzard Rebrand Project",
             "image": "blizzard-com.png",
             "thumbnail": "blizzard-com.jpg",
@@ -60,7 +85,7 @@
             "label": "2012",
             "links": [
                 {
-                    "url": "https://www.gamestop.com/"
+                    "url": "https://web.archive.org/web/20130328205548/http://www.gamestop.com/"
                 }
             ],
             "description": "The new header for the EBGames and GameStop e-commerce sites represented an improvement on several fronts. Visually, it was less cluttered than the previous header and featured fewer items hidden behind drop-down menus. More importantly, on the technical side of the implementation it had less markup, less CSS, and less JavaScript, resulting in a measurable boost to client-side performance and reduction in bandwidth consumption (about 30%)."
@@ -209,6 +234,13 @@
         }
     ],
     "titles": [
+        {
+            "title": "Warframe: Angels of the Zariman",
+            "publisher": "Digital Extremes",
+            "year": "2022",
+            "image": "warframe.jpg",
+            "description": "As <strong>Havi Sullivan</strong>. Supported ongoing delivery of new Warframe updates and monetization, including themed digital packs and the Prime Resurgence program."
+        },
         {
             "title": "Hearthstone®: Saviors of Uldum",
             "publisher": "Blizzard Entertainment",

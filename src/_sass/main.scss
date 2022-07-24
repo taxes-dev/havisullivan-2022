@@ -12,6 +12,7 @@ a:hover {
     padding: 12px;
     color: $scheme-main;
     position: relative;
+    letter-spacing: 0.03em;
 
     @include from($desktop) {
         &::after {
@@ -36,6 +37,7 @@ a:hover {
 
 .pfcard {
     background-repeat: no-repeat;
+    background-color: #fff;
     &[data-image] {
         cursor: pointer;
     }
@@ -48,9 +50,10 @@ a:hover {
     }
 
     &.inverted {
+        background-color: #000;
         .card-content {
             a, a:visited {
-                color: $yellow;
+                color: $banana;
             }
             a:hover {
                 color: $scheme-main;
