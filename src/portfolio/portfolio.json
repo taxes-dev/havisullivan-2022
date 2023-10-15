@@ -1,13 +1,50 @@
 {
     "web": [
         {
-            "title": "Soulframe.com",
+            "title": "Soulframe.com (TennoCon 2023)",
+            "image": "soulframe-2023.jpg",
+            "thumbnail": "soulframe-2023.png",
+            "label": "2023",
+            "inverted": true,
+            "links": [
+                {
+                    "url": "https://www.soulframe.com/"
+                }
+            ],
+            "description": "In preparation for TennoCon 2023, we updated the <em>Soulframe</em> web site to better align with the latest visual language of the game and position us for providing future updates on the game’s progress."
+        },
+        {
+            "title": "The Duviri Paradox",
+            "image": "duviri.jpg",
+            "thumbnail": "duviri.png",
+            "label": "2023",
+            "links": [
+                {
+                    "url": "https://www.warframe.com/the-duviri-paradox"
+                }
+            ],
+            "description": "The Duviri Paradox game update was one of the most important Warframe updates of 2023, and with my team at full strength for the first time after years of hiring, we were able to deliver a truly interactive and immersive experience. It included not only deatils on the update itself, but also interactive elements not previously employed on warframe.com, including a minigame created in PIXI.js that awarded an in-game item for players who found the easter eggs hidden on the site."
+        },
+        {
+            "title": "Wayfinder",
+            "image": "playwayfinder.jpg",
+            "thumbnail": "playwayfinder.png",
+            "label": "2022",
+            "links": [
+                {
+                    "url": "https://www.playwayfinder.com/"
+                }
+            ],
+            "description": "Announced at The Game Awards 2022, my team supported the game through its closed beta and early access period with a site that handle both beta signups and ongoing account management, including linking platform accounts for cross-play. It also featured breakdowns of the available Founder's Packs and seasonal rewards."
+        },
+        {
+            "title": "Soulframe.com (TennoCon 2022)",
             "image": "soulframe.png",
             "thumbnail": "soulframe.jpg",
             "label": "2022",
             "links": [
                 {
-                    "url": "https://www.soulframe.com/"
+                    "url": "https://web.archive.org/web/20220805150017/https://www.soulframe.com/en"
                 }
             ],
             "description": "At TennoCon 2022, Digital Extremes announced their latest game IP, <em>Soulframe</em>. This site featured an intriguing puzzle for players to solve and allowed them to reserve their display names for when the game launches."
@@ -141,16 +178,24 @@
     ],
     "app": [
         {
+            "title": "Warframe Launcher (PC)",
+            "image": "wf-launcher.jpg",
+            "thumbnail": "wf-launcher.png",
+            "label": "2023",
+            "links": [
+                {
+                    "url": "https://www.warframe.com/download",
+                    "text": "Download the App"
+                }
+            ],
+            "inverted": true,
+            "description": "The web team at Digital Extremes was responsible for updating the content inside Warframe's PC launcher on a regular basis. In addition, I personally contributed native C++ code changes to the launcher."
+        },
+        {
             "title": "Shop in Blizzard Battle.net App",
             "image": "shop-app.png",
             "thumbnail": "shop-app.jpg",
             "label": "2014",
-            "links": [
-                {
-                    "url": "https://www.blizzard.com/en-us/apps/battle.net/desktop",
-                    "text": "Download the App"
-                }
-            ],
             "inverted": true,
             "description": "After successfully launching Battle.net Shop on the web, the next stop was to create a newvtab in the Battle.net App. This required working closely with the native programmers on the Appvteam to integrate the web pages seamlessly into the application window. The App also had its ownvrequirements for supported dimensions, so I had to expand the range of responsive states beyondvwhat was used on the web site. Fortunately we had established a common UI language between the App and the web site previously, so integrating the overall look and feel was less of an issue."
         },
@@ -234,6 +279,20 @@
         }
     ],
     "titles": [
+        {
+            "title": "Wayfinder",
+            "publisher": "Digital Extremes",
+            "year": "2023",
+            "image": "wayfinder.png",
+            "description": "As <strong>Havi Sullivan, Web Product Director</strong>. Delivered supporting web experiences and account management for Wayfinder announce, closed beta, and early access periods."
+        },
+        {
+            "title": "Warframe: The Duviri Paradox",
+            "publisher": "Digital Extremes",
+            "year": "2023",
+            "image": "warframe.jpg",
+            "description": "As <strong>Havi Sullivan</strong>. Delivered supporting web experiences for the Duviri Paradox game update. Also programmed a web-based minigame in PixiJS (based on an in-game version of the same minigame) for players to acquire an in-game item on web."
+        },
         {
             "title": "Warframe: Angels of the Zariman",
             "publisher": "Digital Extremes",
